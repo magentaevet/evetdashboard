@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(require('./router/auth'));
 
 const User = require('./model/userSchema');
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 8000;
 
 
 app.get('/',(req,res)=>{
